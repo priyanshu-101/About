@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Apply dark mode globally */
+@layer base {
+    html {
+      background-color: #000000; /* Set background color to black */
+      color: #FFFFFF; /* Set text color to white */
+    }
+  
+    body {
+      background-color: #000000; /* Ensure background is black */
+      color: #FFFFFF; /* Ensure text is white */
+    }
+  }
+  
