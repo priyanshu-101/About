@@ -1,0 +1,28 @@
+{
+  "Languages": [
+    { "name": "C++", "icon": "C++" },
+    { "name": "JavaScript", "icon": "JS" },
+    { "name": "TypeScript", "icon": "TS" },
+    { "name": "Go", "icon": "GO" },
+    { "name": "SQL", "icon": "SQL" }
+  ],
+  "Libraries/Frameworks": [
+    { "name": "Tailwind", "icon": "~" },
+    { "name": "React", "icon": "⚛" },
+    { "name": "Next.js", "icon": "△" },
+    { "name": "Node.js", "icon": "◈" },
+    { "name": "Express", "icon": "▤" },
+    { "name": "Elixir", "icon": "ex" }
+  ],
+  "Databases": [
+    { "name": "Firebase", "icon": "🔥" },
+    { "name": "PostgreSQL", "icon": "🐘" },
+    { "name": "MySQL", "icon": "◈" }
+  ],
+  "Tools/Technologies": [
+    { "name": "Git", "icon": "✏" },
+    { "name": "Firebase", "icon": "🔥" },
+    { "name": "Git", "icon": "◇" },
+    { "name": "Linux", "icon": "🐧" }
+  ]
+}
