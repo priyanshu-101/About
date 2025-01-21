@@ -17,7 +17,14 @@ const Experience = () => {
                         </p>
                       </div>
                       <p className="text-md font-semibold text-gray-100 mt-1">
+                      <a
+                            href={exp.linkedInUrl} 
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-100 "
+                        >
                         at {exp.company}
+                        </a>
                       </p>
                       <p className="text-sm text-gray-200">Location: {exp.location}</p>
                       <div className="mt-4">

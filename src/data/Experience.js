@@ -2,6 +2,7 @@ export const experience = [
     {
       jobTitle: "Software Developer",
       company: "DFree Novelish",
+      linkedInUrl:import.meta.env.VITE_DFREE,
       location: "Remote",
       startDate: "2024-05-01",
       endDate: "2024-08-31",
@@ -15,7 +16,8 @@ export const experience = [
     },
     {
       jobTitle: "Climate Risk Analyst",
-      company: "EY",
+      company: "Ernst & Young",
+      linkedInUrl:import.meta.env.VITE_XIPPER,
       location: "New Delhi, India",
       startDate: "2023-01-01",
       endDate: "2023-12-31",

@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Home, Info, Menu, X } from 'lucide-react';
+import  { useState, useEffect } from 'react';
+import { Home, Info, Menu } from 'lucide-react';
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +20,6 @@ const Sidebar = () => {
 
     window.addEventListener('beforeinstallprompt', handleInstallPrompt);
 
-    // Check if the app is already installed
     if (window.matchMedia('(display-mode: standalone)').matches) {
       console.log('App is already installed');
     } else {
@@ -30,7 +29,6 @@ const Sidebar = () => {
     return () => window.removeEventListener('beforeinstallprompt', handleInstallPrompt);
   }, []);
 
-  // Add an install button to force the prompt
   const handleInstallClick = async () => {
     if (!installPrompt) {
       console.log('No install prompt available');
@@ -49,7 +47,7 @@ const Sidebar = () => {
         onClick={() => setIsOpen(!isOpen)}
         className="lg:hidden fixed top-4 left-4 z-50 p-2 rounded-lg bg-gray-800 text-white hover:bg-gray-700"
       >
-        {isOpen ? <X size={24} /> : <Menu size={24} />}
+         <Menu size={24} />
       </button>
 
       <div className={`
@@ -61,9 +59,7 @@ const Sidebar = () => {
         w-64 p-6
       `}>
         <div className="space-y-8">
-          <div className="text-xl font-bold text-white">
-            My Dashboard
-          </div>
+
           <nav className="space-y-2">
             {menuItems.map((item, index) => (
               <a
@@ -71,7 +67,7 @@ const Sidebar = () => {
                 href={item.path}
                 className="flex items-center gap-4 px-4 py-3 rounded-lg
                          hover:bg-gray-800 transition-colors duration-200
-                         text-gray-300 hover:text-white"
+                         text-gray-300 hover:text-white mt-9"
               >
                 {item.icon}
                 <span>{item.label}</span>

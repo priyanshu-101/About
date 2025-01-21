@@ -15,6 +15,7 @@ const About = () => {
         <div>
          <Experience />
         </div>
+        <h1 className="text-2xl font-bold text-gray-100 mb-6 mt-4">Projects</h1>
         <div className="mt-8">
           <SocialLinks />
         </div>
