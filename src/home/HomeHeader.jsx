@@ -32,7 +32,7 @@ const HomeHeader = () => {
           <div className="relative z-10 w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden">
             <div className="w-full h-full">
               <img
-                src="/src/assets/hI.jpg"
+                src="/hI.jpg"
                 alt="Profile"
                 className="w-full h-full object-cover"
                 style={{
