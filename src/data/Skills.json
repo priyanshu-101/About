@@ -1,9 +1,12 @@
 {
   "Languages": [
-    { "name": "C++", "icon": "C++" },
     { "name": "JavaScript", "icon": "JS" },
     { "name": "TypeScript", "icon": "TS" },
-    { "name": "Go", "icon": "GO" },
+    { "name": "Java", "icon": "JAVA" },
+    { "name": "HTML", "icon": "HTML" },
+    { "name": "CSS", "icon": "CSS" },
+    { "name": "SASS", "icon": "SASS" },
+    { "name": "JSON", "icon": "JSON" },
     { "name": "SQL", "icon": "SQL" }
   ],
   "Libraries/Frameworks": [
@@ -12,17 +15,20 @@
     { "name": "Next.js", "icon": "△" },
     { "name": "Node.js", "icon": "◈" },
     { "name": "Express", "icon": "▤" },
-    { "name": "Elixir", "icon": "ex" }
+    { "name": "Redux", "icon": "RDX" },
+    { "name": "React Native", "icon": "RN" }
   ],
   "Databases": [
     { "name": "Firebase", "icon": "🔥" },
-    { "name": "PostgreSQL", "icon": "🐘" },
+    { "name": "MongoDB", "icon": "🍃" },
     { "name": "MySQL", "icon": "◈" }
   ],
   "Tools/Technologies": [
-    { "name": "Git", "icon": "✏" },
     { "name": "Firebase", "icon": "🔥" },
     { "name": "Git", "icon": "◇" },
-    { "name": "Linux", "icon": "🐧" }
+    { "name": "Linux", "icon": "🐧" },
+    { "name": "Docker", "icon": "🐳" },
+    { "name": "Postman", "icon": "📬" },
+    { "name": "VS Code", "icon": "🆚" }
   ]
 }

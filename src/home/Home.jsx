@@ -10,7 +10,7 @@ const Home = () => {
       <div className="w-full md:w-1/4 mb-6 md:mb-0">
         <Sidebar />
       </div>
-      <div className="flex-1 flex flex-col space-y-6 md:space-y-8 overflow-auto">
+      <div className="flex-1 flex flex-col space-y-6 md:space-y-8 overflow-auto hide-scrollbar">
         <div>
           <HomeHeader />
         </div>
