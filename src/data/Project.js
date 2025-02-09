@@ -40,7 +40,6 @@ export const project = [
       "Placement status tracking with company-wise stats",
       "Admin panel for managing student and company data",
       "Real-time updates on placement results",
-      "Dark and light mode toggle"
     ]
   },
 
