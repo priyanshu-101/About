@@ -1,4 +1,3 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const HomeHeader = () => {
@@ -12,7 +11,7 @@ const HomeHeader = () => {
     <div className="flex flex-col md:flex-row items-center justify-between py-16 px-8 max-w-7xl mx-auto">
       <div className="md:w-1/2 md:pr-12 mb-8 md:mb-0">
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-          Hi, I'm <span className="text-yellow-300">Priyanshu</span>
+          Hi, I&apos;m <span className="text-yellow-300">Priyanshu</span>
           <br />
           <span className="text-yellow-300">Agarwal</span>
         </h1>
@@ -25,6 +24,11 @@ const HomeHeader = () => {
         >
           Get In Touch
         </button>
+        <div className="mt-6 w-full max-w-xl">
+          <div className="bg-gray-800 rounded-md p-5 text-base md:text-lg text-white font-normal text-left shadow-md">
+            Hi! I&apos;m Priyanshu Agarwal, a developer who loves turning ideas into interactive digital experiences. I blend creativity with code to build modern, impactful web applications. Passionate about innovation, design, and crafting solutions that make a difference.
+          </div>
+        </div>
       </div>
       <div className="md:w-1/2 flex justify-center items-center">
         <div className="relative inline-block">
