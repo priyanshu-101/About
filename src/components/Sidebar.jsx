@@ -80,11 +80,12 @@ const Sidebar = () => {
             </a>
           ))}
         </nav>
-        {/* Install App Button */}
+        {/* Install App Button at the bottom */}
         {installPrompt && (
           <button
             onClick={handleInstallClick}
-            className="mt-10 w-full btn-primary"
+            className="btn-primary w-full fixed left-0 bottom-6 lg:static lg:mt-auto lg:mb-0 mx-6 z-50"
+            style={{ maxWidth: '220px' }}
           >
             Install App
           </button>
