@@ -8,32 +8,33 @@ const HomeHeader = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between py-16 px-8 max-w-7xl mx-auto">
+    <div className="flex flex-col md:flex-row items-center justify-between py-20 px-8 max-w-7xl mx-auto animate-fade-in">
       <div className="md:w-1/2 md:pr-12 mb-8 md:mb-0">
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-          Hi, I&apos;m <span className="text-yellow-300">Priyanshu</span>
+        <h1 className="text-5xl md:text-6xl font-extrabold mb-4 gradient-text drop-shadow-lg">
+          Hi, I&apos;m Priyanshu
           <br />
-          <span className="text-yellow-300">Agarwal</span>
+          <span className="block text-4xl md:text-5xl font-extrabold gradient-text">Agarwal</span>
         </h1>
-        <h2 className="text-2xl md:text-3xl text-white mb-6">
+        <h2 className="text-2xl md:text-3xl text-primary-400 font-semibold mb-6 animate-slide-up">
           Full Stack Developer
         </h2>
         <button
           onClick={handleNavigation}
-          className="bg-yellow-400 text-white px-8 py-3 rounded-lg hover:bg-yellow-600 transition-colors"
+          className="btn-primary mt-2 animate-scale-in"
         >
           Get In Touch
         </button>
-        <div className="mt-6 w-full max-w-xl">
-          <div className="bg-gray-800 rounded-md p-5 text-base md:text-lg text-white font-normal text-left shadow-md">
+        <div className="mt-8 w-full max-w-xl animate-fade-in">
+          <div className="glass-card p-6 text-base md:text-lg text-white font-normal text-left shadow-glow">
             Hi! I&apos;m Priyanshu Agarwal, a developer who loves turning ideas into interactive digital experiences. I blend creativity with code to build modern, impactful web applications. Passionate about innovation, design, and crafting solutions that make a difference.
           </div>
         </div>
       </div>
-      <div className="md:w-1/2 flex justify-center items-center">
+      <div className="md:w-1/2 flex justify-center items-center animate-float">
         <div className="relative inline-block">
-          <div className="absolute -z-0 w-64 h-64 md:w-80 md:h-80 rounded-full top-2 left-2"></div>
-          <div className="relative z-10 w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden">
+          {/* Glowing border */}
+          <div className="absolute -z-0 w-64 h-64 md:w-80 md:h-80 rounded-full top-2 left-2 bg-gradient-to-tr from-blue-500 via-purple-500 to-pink-500 blur-2xl opacity-60 animate-glow"></div>
+          <div className="relative z-10 w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-white/20">
             <div className="w-full h-full">
               <img
                 src="/hI.jpg"
