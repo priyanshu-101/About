@@ -1,8 +1,10 @@
 import  { useState, useEffect } from 'react';
 import { Home, Info, Menu } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const menuItems = [
     { icon: <Home size={20} />, label: 'Home', path: '/' },
@@ -67,18 +69,24 @@ const Sidebar = () => {
           <span className="text-2xl font-extrabold gradient-text tracking-tight select-none">Priyanshu</span>
         </div>
         <nav className="space-y-2 w-full">
-          {menuItems.map((item, index) => (
-            <a
-              key={index}
-              href={item.path}
-              className="flex items-center gap-4 px-4 py-3 rounded-xl font-semibold text-lg
-                         hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 hover:text-white
-                         transition-all duration-200 text-gray-200/90 hover:shadow-glow"
-            >
-              {item.icon}
-              <span>{item.label}</span>
-            </a>
-          ))}
+          {menuItems.map((item, index) => {
+            const isActive = location.pathname === item.path;
+            return (
+              <Link
+                key={index}
+                to={item.path}
+                className={`flex items-center gap-4 px-4 py-3 rounded-xl font-semibold text-lg
+                           transition-all duration-200 hover:shadow-glow
+                           ${isActive 
+                             ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-glow' 
+                             : 'text-gray-200/90 hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 hover:text-white'
+                           }`}
+              >
+                {item.icon}
+                <span>{item.label}</span>
+              </Link>
+            );
+          })}
         </nav>
         {/* Install App Button at the bottom */}
         {installPrompt && (
