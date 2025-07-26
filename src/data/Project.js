@@ -11,9 +11,10 @@ export const project = [
       "Real-time task updates using Supabase Realtime",
       "Task progress tracking with a dashboard and charts",
       "Dark and light mode toggle"
-    ]
+    ],
+    "type": "personal"
   },
-  
+
   {
     "name": "Blog Website",
     "description": "A modern blog platform for creating, sharing, and managing articles with a seamless user experience.",
@@ -26,9 +27,10 @@ export const project = [
       "Rich text editor for writing content",
       "Category-based post filtering",
       "Like, comment, and share functionality",
-    ]
+    ],
+    "type": "personal"
   },
-  
+
   {
     "name": "STC Portal",
     "description": "A college placement portal to track and display the placement status of students and companies visiting the campus.",
@@ -40,7 +42,42 @@ export const project = [
       "Placement status tracking with company-wise stats",
       "Admin panel for managing student and company data",
       "Real-time updates on placement results",
-    ]
+    ],
+    "type": "personal"
+  },
+
+  {
+    "name": "Mindor Tech",
+    "description": "A digital innovation company specializing in AI-first solutions, custom software development, and digital transformation for businesses.",
+    "technologies": ["React", "Next.js", "AI/ML", "Node.js", "Custom Software Solutions"],
+    "repositoryUrl": "https://github.com/priyanshu-101/Mindor-tech",
+    "liveDemoUrl": "https://www.mindor.tech/",
+    "features": [
+      "AI-first approach with cutting-edge automation",
+      "Custom software development and MVP launches",
+      "Enterprise-grade security and compliance",
+      "Digital transformation consulting",
+      "RAG chatbots and intelligent automation",
+      "Growth-focused delivery and ROI optimization"
+    ],
+    "type": "freelance"
+  },
+
+    {
+    "name": "Service Web Platform",
+    "description": "A professional service-based business website with portfolio showcase and client engagement features.",
+    "technologies": ["React", "Vite", "CSS3", "JavaScript", "Vercel"],
+    "repositoryUrl": "https://github.com/priyanshu-101/serviceweb",
+    "liveDemoUrl": "https://serviceweb-ggwe-woad.vercel.app/",
+    "features": [
+      "Professional portfolio showcase",
+      "Service listing and descriptions",
+      "About us and company information",
+      "Contact form and client communication",
+      "Responsive design for all devices",
+      "Modern UI/UX with clean navigation"
+    ],
+    "type": "freelance"
   },
 
   {
@@ -56,9 +93,7 @@ export const project = [
       "Meeting scheduling and invites",
       "User authentication and role-based access",
       "Dark and light mode toggle"
-    ]
-  }
-  
-  
-  ]
-  
+    ],
+    "type": "freelance"
+  },
+]
