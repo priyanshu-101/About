@@ -1,5 +1,5 @@
 import  { useState, useEffect } from 'react';
-import { Home, Info, Menu } from 'lucide-react';
+import { Home, Info, Menu, Briefcase } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Sidebar = () => {
@@ -8,7 +8,8 @@ const Sidebar = () => {
 
   const menuItems = [
     { icon: <Home size={20} />, label: 'Home', path: '/' },
-    { icon: <Info size={20} />, label: 'About', path: '/about' }
+    { icon: <Info size={20} />, label: 'About', path: '/about' },
+    { icon: <Briefcase size={20} />, label: 'Services', path: '/services' }
   ];
 
   const [installPrompt, setInstallPrompt] = useState(null);
@@ -44,6 +45,14 @@ const Sidebar = () => {
 
   return (
     <div className="relative z-50">
+      {/* Mobile backdrop overlay */}
+      {isOpen && (
+        <div 
+          className="lg:hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-30"
+          onClick={() => setIsOpen(false)}
+        />
+      )}
+
       {/* Mobile menu button */}
       <button 
         onClick={() => setIsOpen(!isOpen)}
@@ -75,6 +84,7 @@ const Sidebar = () => {
               <Link
                 key={index}
                 to={item.path}
+                onClick={() => setIsOpen(false)} // Close sidebar on mobile when clicking link
                 className={`flex items-center gap-4 px-4 py-3 rounded-xl font-semibold text-lg
                            transition-all duration-200 hover:shadow-glow
                            ${isActive 
